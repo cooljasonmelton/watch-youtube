@@ -19,15 +19,13 @@ const openVideoOnly = (url = "") => {
       const formattedUrlParams = formattedUrl.split("youtu.be/")[1];
       videoId = formattedUrlParams.split("?")[0];
     }
-    console.log(videoId);
     if (videoId.length === 11) {
       window.open(`https://www.youtube.com/embed/${videoId}`, "_blank");
     } else throw new Error();
-
-    // window.open(`https://www.youtube.com/embed/${videoId}`, "_blank");
   } catch (e) {
     alert("didnt work, probably bad url");
   }
 };
 
 const clearForm = () => (flinkInput.value = "");
+document.getElementById("clear-button").addEventListener("click", clearForm);

@@ -1,0 +1,14 @@
+{
+  "name": "watch youtube",
+  "manifest_version": 3,
+
+  "version": "1.0",
+  "description": "open youtube video in an embedded player",
+  "permissions": ["scripting", "activeTab", "tabs"],
+  "action": {},
+  "background": {
+    "service_worker": "openVideo.js"
+  },
+  "host_permissions": ["*://*/*", "<all_urls>"],
+  "icons": {}
+}
