@@ -2,14 +2,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
   background-color: #06d6a0;
   color: #073b4c;
 }
 form,
 input {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -34,6 +34,7 @@ main {
   border-radius: 16px;
   background-color: #ffd166;
   padding: 32px;
+  box-shadow: 1px 2px 2px #073b4c;
 }
 
 #flink {
@@ -44,11 +45,29 @@ main {
   border-bottom: 0.1em solid #073b4c;
   background-color: #daf3fc;
 }
+#flink::placeholder {
+  color: #acafaf;
+  opacity: 1;
+}
 
-#flink-submit-cta {
+#flink-submit-cta,
+#clear-button {
   position: relative;
+  box-shadow: 0.5px 1px 1px #073b4c;
+  border-bottom: 0.1em solid #073b4c;
+  border-radius: 4px;
+  background-color: #daf3fc;
   padding: 4px;
+
   width: 25%;
   border-bottom: 0.1em solid #073b4c;
   background-color: #daf3fc;
+}
+
+.form-button-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
