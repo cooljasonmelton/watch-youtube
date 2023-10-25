@@ -1,12 +1,6 @@
 let watchYoutubeForm = document.getElementById("watch-youtube-form");
 let flinkInput = document.getElementById("flink");
 
-watchYoutubeForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let flinkInputValue = flinkInput.value;
-  openVideoOnly(flinkInputValue);
-});
-
 // open YouTube links as embedded video in new tab
 const openVideoOnly = (url = "") => {
   try {
@@ -26,6 +20,14 @@ const openVideoOnly = (url = "") => {
     alert("didnt work, probably bad url");
   }
 };
+watchYoutubeForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let flinkInputValue = flinkInput.value;
+  openVideoOnly(flinkInputValue);
+});
 
-const clearForm = () => (flinkInput.value = "");
+const clearForm = () => {
+  flinkInput.value = "";
+  flinkInput.focus();
+};
 document.getElementById("clear-button").addEventListener("click", clearForm);
