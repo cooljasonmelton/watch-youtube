@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #06d6a0;
+  color: #073b4c;
+}
+form,
+input {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#watch-youtube-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  border: 1px solid #073b4c;
+  border-radius: 16px;
+  background-color: #ffd166;
+  padding: 32px;
+}
+
+#flink {
+  position: relative;
+  padding: 4px;
+  margin: 0;
+  width: 90%;
+  border-bottom: 0.1em solid #073b4c;
+  background-color: #daf3fc;
+}
+
+#flink-submit-cta {
+  position: relative;
+  padding: 4px;
+  width: 25%;
+  border-bottom: 0.1em solid #073b4c;
+  background-color: #daf3fc;
+}
