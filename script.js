@@ -14,7 +14,7 @@ const openVideoOnly = (url = "") => {
       videoId = formattedUrlParams.split("?")[0];
     }
     if (videoId.length === 11) {
-      window.open(`https://www.youtube.com/embed/${videoId}`, "_blank");
+      window.open(`https://www.youtube.com/embed/${videoId}?rel=0`, "_blank");
     } else throw new Error();
   } catch (e) {
     alert("didnt work, probably bad url");
